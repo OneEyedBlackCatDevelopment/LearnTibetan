@@ -1,0 +1,358 @@
+<html>
+
+
+<head>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<script>
+
+
+
+	const map1 = new Map();
+	map1.set('0F40', {uname:'ka', unicode:'\u0F40'});
+	map1.set('0F41', {uname:'kha'});
+	map1.set('0F42', {uname:'ga'});
+
+	map1.set('0F45', {uname:'ca'});
+	map1.set('0F46', {uname:'cha'});
+	map1.set('0F47', {uname:'ja'});
+	
+	map1.set('0F4F', {uname:'ta'});
+	map1.set('0F51', {uname:'tha'});
+	map1.set('0F52', {uname:'da'});
+	
+	map1.set('0F54', {uname:'pa'});
+	map1.set('0F55', {uname:'pha'});
+	map1.set('0F56', {uname:'ba'});
+	
+	map1.set('0F59', {uname:'tsa'});
+	map1.set('0F5A', {uname:'tsha'});
+	map1.set('0F5B', {uname:'dza'});
+
+console.log(map1.get('0F40').unicode);
+
+      function play( audioname ) {
+        var audio = document.getElementById(audioname);
+        audio.play();
+      }
+</script>
+
+
+
+<body>
+
+<h1>Lession 1</h1>
+<table>
+<tr>
+	<td/>
+	<td>Colum 1<br/>
+		<input type="image" src="audiobutton.png"  onclick="play('L1_col1')">
+			<audio id="L1_col1" src="L1_col1.mp3"></audio>
+		</input>
+	</td>
+	<td>Colum 2<br/>
+		<input type="image" src="audiobutton.png"  onclick="play('L1_col2')">
+			<audio id="L1_col2" src="L1_col2.mp3"></audio>
+		</input>
+	</td>
+	<td>Colum 3<br/>
+		<input type="image" src="audiobutton.png"  onclick="play('L1_col3')">
+			<audio id="L1_col3" src="L1_col3.mp3"></audio>
+		</input>
+	</td>
+
+<tr>
+<tr>
+	<td>Row 1</td>
+	<td>
+		<div class=tibetan>&#x0F40;</div>
+		<div class=uname>ka</div>
+		<input value="&#x0F40;" type="image" src="audiobutton.png"  onclick="play('x0F40')">
+			<audio id="x0F40" src="x0F40.mp3"></audio>
+		</input>
+	</td>
+	<td>
+		<div class=tibetan>&#x0F41;</div>
+		<div class=uname>kha</div>	
+		<input type="image" src="audiobutton.png"  onclick="play('x0F41')">
+			<audio id="x0F41" src="x0F41.mp3"></audio>
+		</input>
+	</td>
+	<td>
+		<div class=tibetan>&#x0F42;</div>
+		<div class=uname>ga</div>		
+		<input type="image" src="audiobutton.png"  onclick="play('x0F42')">
+			<audio id="x0F42" src="x0F42.mp3"></audio>
+		</input>
+	</td>
+</tr>
+<tr>
+	<td>Row 2</td>
+	<td>
+		<div class=tibetan>&#x0F45;</div>
+		<div class=uname>ca</div>
+		<input type="image" src="audiobutton.png"  onclick="play('x0F45')">
+			<audio id="x0F45" src="x0F45.mp3"></audio>
+		</input>
+	</td>
+	<td>
+		<div class=tibetan>&#x0F46;</div>
+		<div class=uname>cha</div>	
+		<input type="image" src="audiobutton.png"  onclick="play('x0F46')">
+			<audio id="x0F46" src="x0F46.mp3"></audio>
+		</input>
+
+	</td>
+	<td>
+		<div class=tibetan>&#x0F47;</div>
+		<div class=uname>ja</div>	
+		<input type="image" src="audiobutton.png"  onclick="play('x0F47')">
+			<audio id="x0F47" src="x0F47.mp3"></audio>
+		</input>		
+	</td>
+</tr>
+<tr>
+	<td>Row 3</td>
+	<td>
+		<div class=tibetan>&#x0F4F;</div>
+		<div class=uname>ta</div>
+		<input type="image" src="audiobutton.png"  onclick="play('x0F4F')">
+			<audio id="x0F4F" src="x0F4F.mp3"></audio>
+		</input>
+	</td>
+	<td>
+		<div class=tibetan>&#x0F50;</div>
+		<div class=uname>tha</div>	
+		<input type="image" src="audiobutton.png"  onclick="play('x0F50')">
+			<audio id="x0F50" src="x0F50.mp3"></audio>
+		</input>
+
+	</td>
+	<td>
+		<div class=tibetan>&#x0F51;</div>
+		<div class=uname>da</div>	
+		<input type="image" src="audiobutton.png"  onclick="play('x0F51')">
+			<audio id="x0F51" src="x0F51.mp3"></audio>
+		</input>		
+	</td>
+
+</tr>
+
+<tr>
+	<td>Row 4</td>
+	<td>
+		<div class=tibetan>&#x0F54;</div>
+		<div class=uname>pa</div>
+		<input type="image" src="audiobutton.png"  onclick="play('x0F54')">
+			<audio id="x0F54" src="x0F54.mp3"></audio>
+		</input>
+	</td>
+	<td>
+		<div class=tibetan>&#x0F55;</div>
+		<div class=uname>pha</div>	
+		<input type="image" src="audiobutton.png"  onclick="play('x0F55')">
+			<audio id="x0F55" src="x0F55.mp3"></audio>
+		</input>
+
+	</td>
+	<td>
+		<div class=tibetan>&#x0F56;</div>
+		<div class=uname>ba</div>		
+		<input type="image" src="audiobutton.png"  onclick="play('x0F56')">
+			<audio id="x0F56" src="x0F56.mp3"></audio>
+		</input>
+	</td>
+
+</tr>
+
+<tr>
+	<td>Row 5</td>
+	<td>
+		<div class=tibetan>&#x0F59;</div>
+		<div class=uname>tsa</div>
+		<input type="image" src="audiobutton.png"  onclick="play('x0F59')">
+			<audio id="x0F59" src="x0F59.mp3"></audio>
+		</input>
+	</td>
+	<td>
+		<div class=tibetan>&#x0F5A;</div>
+		<div class=uname>tsha</div>	
+		<input type="image" src="audiobutton.png"  onclick="play('x0F5A')">
+			<audio id="x0F5A" src="x0F5A.mp3"></audio>
+		</input>
+	</td>
+	<td>
+		<div class=tibetan>&#x0F5B;</div>
+		<div class=uname>dza</div>		
+		<input type="image" src="audiobutton.png"  onclick="play('x0F5B')">
+			<audio id="x0F5B" src="x0F5B.mp3"></audio>
+		</input>
+	</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+<h1>all 30</h1>
+<table>
+<tr>
+	<td/>
+	<td>Colum 1</td>
+	<td>Colum 2</td>
+	<td>Colum 3</td>
+	<td>Colum 4</td>
+<tr>
+<tr>
+	<td>Row 1</td>
+	<td>&#3904;
+		<br/>ka
+	</td>
+	<td>&#3905;
+		<br/>kha
+	</td>
+		<td>&#3906;
+		<br/>ga
+	</td>
+	</td>
+		<td>&#3908;
+		<br/>nga
+	</td>
+</tr>
+<tr>
+	<td>Row 2</td>
+	<td>&#3909;
+		<br/>ca
+	</td>
+	<td>&#3910;
+		<br/>cha
+	</td>
+		<td>&#3911;
+		<br/>ja
+	</td>
+	</td>
+		<td>&#3913;
+		<br/>nya
+	</td>
+</tr>
+<tr>
+	<td>Row 3</td>
+	<td>&#3919;
+		<br/>ta
+	</td>
+	<td>&#3920;
+		<br/>tha
+	</td>
+		<td>&#3921;
+		<br/>da
+	</td>
+	</td>
+		<td>&#3923;
+		<br/>na
+	</td>
+</tr>
+
+<tr>
+	<td>Row 4</td>
+	<td>&#3924;
+		<br/>pa
+	</td>
+	<td>&#3925;
+		<br/>pha
+	</td>
+		<td>&#3926;
+		<br/>ba
+	</td>
+	</td>
+		<td>&#3928;
+		<br/>ma
+	</td>
+</tr>
+
+<tr>
+	<td>Row 5</td>
+	<td>&#3929;
+		<br/>tsa
+	</td>
+	<td>&#3930;
+		<br/>tsha
+	</td>
+		<td>&#3931;
+		<br/>dza
+	</td>
+	</td>
+		<td>&#3933;
+		<br/>wa
+	</td>
+</tr>
+
+
+<tr>
+	<td>Row 6</td>
+	<td>&#3934;
+		<br/>zha
+	</td>
+	<td>&#3935;
+		<br/>za
+	</td>
+		<td>&#3936;
+		<br/>a
+	</td>
+	</td>
+		<td>&#3937;
+		<br/>ya
+	</td>
+</tr>
+
+<tr>
+	<td>Row 7</td>
+	<td>&#3938;
+		<br/>ra
+	</td>
+	<td>&#3939;
+		<br/>la
+	</td>
+		<td>&#3940;
+		<br/>sha
+	</td>
+	</td>
+		<td>&#3942;
+		<br/>sa
+	</td>
+</tr>
+
+<tr>
+	<td>Row 8</td>
+	<td>&#3943;
+		<br/>ha
+	</td>
+	<td>&#3944;
+		<br/>a
+	</td>
+		<td>
+		<br/>
+	</td>
+	</td>
+		<td>
+		<br/>
+	</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<a href="https://www.fileformat.info/info/unicode/block/tibetan/list.htm#:~:text=TIBETAN%20LETTER%20KA%20(U%2B0F40)">unicode</a><br/>
+
+<a href="https://www.youtube.com/watch?v=VOivVzGZ1Sw&list=PL1KVm5jgTljTatThw2YLw7nrf05XYBcZV&ab_channel=TibetanLanguageChannel">video</a>
+
+</body>
+</html>

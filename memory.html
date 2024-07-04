@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./memory.css">
+	<link rel="stylesheet" href="./style.css">
+	<script src="myscripts.js"></script>
+	<script src="memory.js"></script>
+	<title>Tibetan Alphabet Memory Game</title>
+</head>
+
+
+<body onload="filldata()">
+	<audio id="audio_player" src=""></audio>
+	<h1>Tibetan Alphabet Memory Game</h1>
+	
+	<p>
+	<form>
+        <label for="level">Level: 
+            <input type="number" name="level" id="level"
+                min="0" max="999" step="1" value="0">
+        </label><span id="level_name"></span>
+		<br>Audio only 
+		<input type="checkbox" id="audio" name="Audio only" value="on">
+    </form>
+	</p><p>
+	Developer nodes
+	<ul>
+		<li>Level count starts at 0</li>
+		<li>It sometimes gets a bit buggy if you are clicking to fast. If this happens just refresh the page.</li>
+		
+	</ul>
+	</p>
+	
+    <main class="boxcontainer" id="game">
+    </main>
+</body>
+</html>

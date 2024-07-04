@@ -1,0 +1,1 @@
+`<span class="tibetan_letter audio_info" onclick="play('!!!letter_code!!!')">&#!!!letter_code!!!;</span><span class=uname>!!!letter_name!!!</span><input type="image" src="memory/!!!letter_code!!!.jpg" value="&#!!!letter_code!!!;"></input>`

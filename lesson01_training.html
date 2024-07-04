@@ -1,0 +1,204 @@
+<html>
+
+
+<head>
+
+<link rel="stylesheet" href="style.css">
+<style>
+
+
+
+
+</style>
+</head>
+<title>Tibetan Alphabet - Lesson 1 - Training</title>
+
+
+<script>
+
+	var showNew = true;
+	
+	const lettersInLesson = new Map();
+	lettersInLesson.set('\u0F40', {uname:'ka'});
+	lettersInLesson.set('\u0F41', {uname:'kha'});
+	lettersInLesson.set('\u0F42', {uname:'ga'});
+
+	lettersInLesson.set('\u0F45', {uname:'ca'});
+	lettersInLesson.set('\u0F46', {uname:'cha'});
+	lettersInLesson.set('\u0F47', {uname:'ja'});
+	
+	lettersInLesson.set('\u0F4F', {uname:'ta'});
+	lettersInLesson.set('\u0F50', {uname:'tha'});
+	lettersInLesson.set('\u0F51', {uname:'da'});
+	
+	lettersInLesson.set('\u0F54', {uname:'pa'});
+	lettersInLesson.set('\u0F55', {uname:'pha'});
+	lettersInLesson.set('\u0F56', {uname:'ba'});
+	
+	lettersInLesson.set('\u0F59', {uname:'tsa'});
+	lettersInLesson.set('\u0F5A', {uname:'tsha'});
+	lettersInLesson.set('\u0F5B', {uname:'dza'});
+
+	
+	const col1 = new Map();
+	col1.set( '\u0F40', lettersInLesson.get( '\u0F40' ));
+	col1.set( '\u0F45', lettersInLesson.get( '\u0F45' ));
+	col1.set( '\u0F4F', lettersInLesson.get( '\u0F4F' ));
+	col1.set( '\u0F54', lettersInLesson.get( '\u0F54' ));
+	col1.set( '\u0F59', lettersInLesson.get( '\u0F59' ));
+	
+	
+	const col2 = new Map();
+	col2.set( '\u0F41', lettersInLesson.get( '\u0F41' ));
+	col2.set( '\u0F46', lettersInLesson.get( '\u0F46' ));
+	col2.set( '\u0F50', lettersInLesson.get( '\u0F50' ));
+	col2.set( '\u0F55', lettersInLesson.get( '\u0F55' ));
+	col2.set( '\u0F5A', lettersInLesson.get( '\u0F5A' ));
+
+	const col3 = new Map();
+	col3.set( '\u0F42', lettersInLesson.get( '\u0F42' ));
+	col3.set( '\u0F47', lettersInLesson.get( '\u0F47' ));
+	col3.set( '\u0F51', lettersInLesson.get( '\u0F51' ));
+	col3.set( '\u0F56', lettersInLesson.get( '\u0F56' ));
+	col3.set( '\u0F5B', lettersInLesson.get( '\u0F5B' ));
+	
+	
+	const row1 = new Map();
+	row1.set('\u0F40', lettersInLesson.get( '\u0F40' ));
+	row1.set('\u0F41', lettersInLesson.get( '\u0F41' ));
+	row1.set('\u0F42', lettersInLesson.get( '\u0F42' ));
+	
+	const row2 = new Map();
+	row2.set('\u0F45', lettersInLesson.get( '\u0F45' ));
+	row2.set('\u0F46', lettersInLesson.get( '\u0F46' ));
+	row2.set('\u0F47', lettersInLesson.get( '\u0F47' ));
+
+	const row3 = new Map();
+	row3.set('\u0F4F', lettersInLesson.get( '\u0F4F' ));
+	row3.set('\u0F50', lettersInLesson.get( '\u0F50' ));
+	row3.set('\u0F51', lettersInLesson.get( '\u0F51' ));
+	
+	const row4 = new Map();
+	row4.set('\u0F54', lettersInLesson.get( '\u0F54' ));
+	row4.set('\u0F55', lettersInLesson.get( '\u0F55' ));
+	row4.set('\u0F56', lettersInLesson.get( '\u0F56' ));
+	
+	const row5 = new Map();
+	row5.set('\u0F59', lettersInLesson.get( '\u0F59' ));
+	row5.set('\u0F5A', lettersInLesson.get( '\u0F5A' ));
+	row5.set('\u0F5B', lettersInLesson.get( '\u0F5B' ));
+
+	
+	console.log( col1 );
+	console.log( col2 );
+	console.log( col3 );
+	
+	// returns random key from Set or Map
+	function getRandomKey(collection) {
+		let keys = Array.from(collection.keys());
+		return keys[Math.floor(Math.random() * keys.length)];
+	}
+
+	letter = getRandomKey(lettersInLesson);
+	debug_letter( letter ); 
+
+	
+     function letter_btn_click (show=true) {
+		const btn = document.getElementById('letter_btn');
+		
+		if(show) {
+			btn.textContent = letter;
+		}else{ 
+			btn.textContent = "Show";
+		}
+      }
+
+	function audio_btn_click() {
+		var audio = document.getElementById('audio_btn');
+		audio.src = get_audio_file_name(letter);
+		
+		debug_letter( letter ); 
+		console.log(audio.src);
+		
+		audio.play();
+      }
+
+	function new_letter( collectionOfLetters ) {
+	
+		const cb = document.getElementById('show_letter_immediately');
+        showNew = cb.checked; 
+	
+	
+		letter = getRandomKey(collectionOfLetters);
+		letter_btn_click( showNew );
+	}
+	
+	function get_audio_file_name( letterCode ) {
+		fileName =  "audio/x0" + letterCode.charCodeAt(0).toString(16).toUpperCase() + ".mp3";
+		return(fileName)
+	}	
+
+	function debug_letter( letterCode ) {
+		console.log( letterCode + " " + lettersInLesson.get(letterCode).uname +  " - " + letterCode.charCodeAt(0).toString(16));
+	}	
+	
+
+</script>
+
+
+<body>
+
+<h1>Tibetan Alphabet - Lesson 1 - Training</h1>
+	
+<div>
+	<a href="index.html">Back to overview</a>
+</div>
+
+
+    <div>
+      <input type="checkbox" id="show_letter_immediately" name="show_letter_immediately" checked>
+      <label for="show_letter_immediately">Show letter immediately</label>
+    </div>
+
+<div>
+	<button onClick="new_letter(lettersInLesson);">New letter from whole lesson</button>
+</div>
+
+<div>
+	<table>
+		<tr>
+			<td>
+				<button id="letter_btn" onclick="letter_btn_click()" style="font-size : 70px; width: 190px; height: 140px;" >Show</button>
+			</td>
+		</tr>
+	<tr>
+		<td>
+			<input  type="image" src="audiobutton.png"  onclick="audio_btn_click()">
+				<audio id="audio_btn"></audio>
+			</input>
+		</td>
+	</tr>
+</table>
+</div>
+<div>
+	<button onClick="new_letter(col1);">New from Col1</button>
+	<button onClick="new_letter(col2);">New from Col2</button>
+	<button onClick="new_letter(col3);">New from Col3</button> 
+</div>
+<div>
+	<button onClick="new_letter(row1);">New from Row1</button>
+	<button onClick="new_letter(row2);">New from Row2</button>
+	<button onClick="new_letter(row3);">New from Row3</button>
+	<button onClick="new_letter(row4);">New from Row4</button>
+	<button onClick="new_letter(row5);">New from Row5</button> 
+</div>
+
+
+
+<body>
+
+
+
+
+</body>
+</html>
