@@ -66,7 +66,7 @@ function filldata() {
 	mainElement.innerHTML = '';
 
 	const tempT = document.createElement('table');
-	html="<tl><th>Letter</th><th>Enlish</th><th>Tibetan</th></tl>";
+	html="<tl><th>Letter</th><th>English</th><th>Tibetan</th></tl>";
 	tempT.insertAdjacentHTML('beforeEnd', html);
 	
 	for( i=0; i<levels[currentLevel].letters.length; i++) {
