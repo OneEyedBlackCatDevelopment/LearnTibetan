@@ -1,6 +1,9 @@
 # Learn The Tibetan Alphabet
 First lessons to learn Tibetan (html, css, Java Script)
 
+You can try it here: \
+https://playspace.at/LearnTibetan/
+
 ## Look and listen to the tibetan alphabet
 <img src="https://github.com/OneEyedBlackCatDevelopment/LearnTibetan/assets/173571148/f9417add-ab28-4b15-8603-82761eb5a0a3" width="150">
 
